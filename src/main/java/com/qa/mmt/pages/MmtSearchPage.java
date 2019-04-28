@@ -48,8 +48,8 @@ public class MmtSearchPage extends Base{
 		try {		
 		roundTrip.click(); // Round trip
 		
-		fromCity.sendKeys("Delhi");
-		toCity.sendKeys("Bangalore");			
+		fromCity.sendKeys(prop.getProperty("fromCity"));
+		toCity.sendKeys(prop.getProperty("toCity"));			
 		
 		deptCal.click(); // departure calender
 		

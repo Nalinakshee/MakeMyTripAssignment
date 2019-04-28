@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Free CRM Application Automation Suite">
-	<test name="Free CRM Application Test">
+<suite name="MakeMyTrip Application Automation Suite">
+	<test name="MakeMyTrip Application Test">
 		<listeners>
 			<listener
 				class-name="com.qa.mmt.listener.ExtentReportsNG" />

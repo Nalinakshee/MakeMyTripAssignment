@@ -62,7 +62,7 @@ public class MmtSearchResult extends Base {
 	 * 
 	 */
 	public void countForOneStopFlights() {
-		MmtUtils.clickElementByJS(nonStopChkBox, driver);
+		//MmtUtils.clickElementByJS(nonStopChkBox, driver);
 		MmtUtils.clickElementByJS(oneStopChkBox, driver);
 		MmtUtils.drawBorder(oneStopLbl, driver);
 		countFlights("One Stop");

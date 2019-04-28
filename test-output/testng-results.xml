@@ -1,40 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-28T06:57:20Z" name="Free CRM Application Automation Suite" finished-at="2019-04-28T06:58:09Z" duration-ms="49045">
+  <suite started-at="2019-04-28T07:56:47Z" name="MakeMyTrip Application Automation Suite" finished-at="2019-04-28T07:59:01Z" duration-ms="133287">
     <groups>
     </groups>
-    <test started-at="2019-04-28T06:57:20Z" name="Free CRM Application Test" finished-at="2019-04-28T06:58:09Z" duration-ms="49045">
+    <test started-at="2019-04-28T07:56:47Z" name="MakeMyTrip Application Test" finished-at="2019-04-28T07:59:01Z" duration-ms="133287">
       <class name="com.qa.mmt.testcases.MmtTest">
-        <test-method is-config="true" signature="extentSetUp()[pri:0, instance:com.qa.mmt.testcases.MmtTest@24313fcc]" started-at="2019-04-28T16:57:20Z" name="extentSetUp" finished-at="2019-04-28T16:57:20Z" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="extentSetUp()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:56:47Z" name="extentSetUp" finished-at="2019-04-28T17:56:48Z" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetUp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.mmt.testcases.MmtTest@24313fcc]" started-at="2019-04-28T16:57:20Z" name="setup" finished-at="2019-04-28T16:57:27Z" duration-ms="6681" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:56:48Z" name="setup" finished-at="2019-04-28T17:56:54Z" duration-ms="6559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@24313fcc]" started-at="2019-04-28T16:57:27Z" name="searchTest" finished-at="2019-04-28T16:58:07Z" duration-ms="40945" status="PASS">
+        <test-method signature="searchTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:56:54Z" name="searchTest" finished-at="2019-04-28T17:56:59Z" duration-ms="5153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.qa.mmt.testcases.MmtTest@24313fcc]" started-at="2019-04-28T16:58:07Z" name="teardown" finished-at="2019-04-28T16:58:08Z" duration-ms="750" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:56:59Z" name="teardown" finished-at="2019-04-28T17:57:00Z" duration-ms="686" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchTest status=SUCCESS method=MmtTest.searchTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@24313fcc] output={null}]]]>
+                <![CDATA[[TestResult name=searchTest status=SUCCESS method=MmtTest.searchTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="endExtent()[pri:0, instance:com.qa.mmt.testcases.MmtTest@24313fcc]" started-at="2019-04-28T16:58:08Z" name="endExtent" finished-at="2019-04-28T16:58:09Z" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:57:00Z" name="setup" finished-at="2019-04-28T17:57:06Z" duration-ms="6138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="countFlightsTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:57:06Z" name="countFlightsTest" finished-at="2019-04-28T17:57:24Z" duration-ms="17998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countFlightsTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:57:24Z" name="teardown" finished-at="2019-04-28T17:57:25Z" duration-ms="739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=countFlightsTest status=SUCCESS method=MmtTest.countFlightsTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:57:25Z" name="setup" finished-at="2019-04-28T17:57:30Z" duration-ms="5631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="countFlightsNonStopTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:57:30Z" name="countFlightsNonStopTest" finished-at="2019-04-28T17:57:54Z" duration-ms="23175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countFlightsNonStopTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:57:54Z" name="teardown" finished-at="2019-04-28T17:57:54Z" duration-ms="817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=countFlightsNonStopTest status=SUCCESS method=MmtTest.countFlightsNonStopTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:57:54Z" name="setup" finished-at="2019-04-28T17:58:00Z" duration-ms="5905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="countFlightsOneStopTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:58:00Z" name="countFlightsOneStopTest" finished-at="2019-04-28T17:58:23Z" duration-ms="22810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countFlightsOneStopTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:58:23Z" name="teardown" finished-at="2019-04-28T17:58:24Z" duration-ms="722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=countFlightsOneStopTest status=SUCCESS method=MmtTest.countFlightsOneStopTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:58:24Z" name="setup" finished-at="2019-04-28T17:58:30Z" duration-ms="6087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyPriceTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:58:30Z" name="verifyPriceTest" finished-at="2019-04-28T17:58:41Z" duration-ms="11469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:58:41Z" name="teardown" finished-at="2019-04-28T17:58:42Z" duration-ms="740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPriceTest status=SUCCESS method=MmtTest.verifyPriceTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:58:42Z" name="setup" finished-at="2019-04-28T17:58:48Z" duration-ms="6095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkSumWithTotalTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:58:48Z" name="checkSumWithTotalTest" finished-at="2019-04-28T17:58:59Z" duration-ms="11235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSumWithTotalTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:58:59Z" name="teardown" finished-at="2019-04-28T17:59:00Z" duration-ms="760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSumWithTotalTest status=SUCCESS method=MmtTest.checkSumWithTotalTest()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="endExtent()[pri:0, instance:com.qa.mmt.testcases.MmtTest@6c40365c]" started-at="2019-04-28T17:59:00Z" name="endExtent" finished-at="2019-04-28T17:59:01Z" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endExtent -->
       </class> <!-- com.qa.mmt.testcases.MmtTest -->
-    </test> <!-- Free CRM Application Test -->
-  </suite> <!-- Free CRM Application Automation Suite -->
+    </test> <!-- MakeMyTrip Application Test -->
+  </suite> <!-- MakeMyTrip Application Automation Suite -->
 </testng-results>
