@@ -5,7 +5,11 @@
     <classes>
       <class name="com.qa.mmt.testcases.MmtTest">
         <methods>
+          <include name="checkSumOfPriceWithTotalTest"/>
+          <include name="extentSetUp"/>
+          <include name="verifyPriceTest"/>
           <include name="setup"/>
+          <include name="countFlightsTest"/>
           <include name="searchTest"/>
           <include name="teardown"/>
         </methods>
