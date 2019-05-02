@@ -1,5 +1,7 @@
 package com.qa.mmt.pages;
 
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -54,39 +56,56 @@ public class MmtSearchPage extends Base{
 		deptCal.click(); // departure calender
 		
 		
-		Calendar cal = Calendar.getInstance();
+		//Get the current date
+	    LocalDate today = LocalDate.now();
+	    System.out.println("Current date using Local Date: " + today);
+			
+	    //add 1 week to the current date
+	    LocalDate nextWeek = today.plus(1, ChronoUnit.WEEKS);
+	    System.out.println("Next week using Local Date: " + nextWeek);
+	      
+		/*Calendar cal = Calendar.getInstance();
 		Date currentDate = cal.getTime();
+		System.out.println("Current Date "+ currentDate);
 		 cal.add(Calendar.DATE, 7);
 		Date afterSevenDays = cal.getTime();;
+		System.out.println("Next week: " + afterSevenDays);*/
 		
+		/*Calendar cal = Calendar.getInstance();
+		Date currentDate = cal.getTime();
+		 cal.add(Calendar.DATE, 7);
+		Date afterSevenDays = cal.getTime();
+		*/
 		
 		String row = "";
 		String col = "";
 		
-		String cordinate = MmtUtils.getCoordinate(currentDate);
+		String cordinate = MmtUtils.getCoordinate(today);
 		row = cordinate.split("-")[0];
 		col = cordinate.split("-")[1];
-		String dayXpth = "//div[@class='DayPicker-Months']/div[1]//div[@class='DayPicker-Body']/div["+row+"]/div["+col+"]";
+		String dayXpthFirst = "//div[@class='DayPicker-Months']/div[1]//div[@class='DayPicker-Body']/div["+row+"]/div["+col+"]";
 		
-		if (driver.findElement(By.xpath(dayXpth)).isDisplayed()) {
-			MmtUtils.clickElementByJS(driver.findElement(By.xpath(dayXpth)), driver);
+		
+		if (driver.findElement(By.xpath(dayXpthFirst)).isDisplayed()) {
+			MmtUtils.clickElementByJS(driver.findElement(By.xpath(dayXpthFirst)), driver);
 			
 		}
 		
-		cordinate = MmtUtils.getCoordinate(afterSevenDays);
+		cordinate = MmtUtils.getCoordinate(nextWeek);
 		row = cordinate.split("-")[0];
 		col = cordinate.split("-")[1];
-
+		String dayXpthSecond = "//div[@class='DayPicker-Months']/div[1]//div[@class='DayPicker-Body']/div[" + row + "]/div["
+				+ col + "]";
 		// Below Logic will check if month is present in same year or in case if it is
 		// present in December and January i.e. in case of different year
-		if ((afterSevenDays.getMonth() > currentDate.getMonth())
-				|| (afterSevenDays.getYear() > currentDate.getYear())) {
-			dayXpth = "//div[@class='DayPicker-Months']/div[2]//div[@class='DayPicker-Body']/div[" + row + "]/div["
+		if ((nextWeek.getMonth().getValue() > today.getMonth().getValue())
+				|| (nextWeek.getYear() > today.getYear())) {
+			dayXpthSecond = "//div[@class='DayPicker-Months']/div[2]//div[@class='DayPicker-Body']/div[" + row + "]/div["
 					+ col + "]";
 		}	
 			
-		if (driver.findElement(By.xpath(dayXpth)).isDisplayed()) {
-			MmtUtils.clickElementByJS(driver.findElement(By.xpath(dayXpth)), driver);	
+		if (driver.findElement(By.xpath(dayXpthSecond)).isDisplayed()) {
+			MmtUtils.clickElementByJS(driver.findElement(By.xpath(dayXpthSecond)), driver);	
 		}
 		
 		MmtUtils.clickElementByJS(searchBtn, driver);
