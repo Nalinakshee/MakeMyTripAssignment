@@ -1,7 +1,5 @@
 package com.qa.mmt.utils;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -31,18 +29,56 @@ public class MmtUtils {
 		String cordinate = "";
 		// DateFormat dateFormat = new SimpleDateFormat("dd MMM yy");
 
-		String myDate = objDate.toString();
-
+		//String myDate = objDate.toString();
+		int row = 0;
+		int month = objDate.getMonthValue();
+		int year = objDate.getYear();
+		
+		LocalDate firstdayoftheMonth = LocalDate.of(year, month, 1);
+		
+		int firstcol = firstdayoftheMonth.getDayOfWeek().getValue();
+		
+		if (firstcol == 7) {
+			firstcol = 1;
+		}else {
+			firstcol += 1;
+		}
+		
+		int offset = 0;
+		if (firstcol==1) {
+			offset = 7;
+			row =1;
+		}else {
+			offset = (7-firstcol)+1;
+			row=1;
+		}
+		
+		int dayoftheMonth = objDate.getDayOfMonth();
+		
+		int restcells = dayoftheMonth-offset;
+		
+		if (restcells>0) {
+			int addrow= 0;
+			if (restcells%7 == 0) {
+				addrow = (restcells/7);
+			}else {
+				addrow = (restcells/7)+1;
+			}
+			
+			row =row+addrow;
+		}
+		
 		int col = objDate.getDayOfWeek().getValue();
+		
 		if (col == 7) {
 			col = 1;
 		} else {
 			col += 1;
 		}
+		
+		/*
 		String day = myDate.split("-")[2];
-		int dayInt = Integer.parseInt(day);
-
-		int row = 0;
+		int dayInt = Integer.parseInt(day);	
 
 		row = dayInt / 7;
 
@@ -60,7 +96,7 @@ public class MmtUtils {
 				row += 1;
 			}
 
-		}
+		}*/
 		cordinate = "" + row + "-" + col;
 		return cordinate;
 	}
